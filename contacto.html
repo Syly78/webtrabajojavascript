@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>TRABAJO FINAL | Contacto.html</title>
+</head>
+<body>
+    <header id="bodyheader">
+        <nav id="navbar">
+           <div class="container">
+            <h1 class="logo"> <span
+            class="text-red">Trabajo final: Javascript</span></h1>
+            <ul>
+              <li><a href="index.html">Index</a></li>
+              <li><a class="galeria.html">Galeria</a></li>
+              <li><a class="presupuesto.html">Presupuesto</a></li>
+              <li><a class="current" href="contacto.html">Contacto</a></li>
+            </ul>   
+             </div> 
+           </nav>
+         </header>
+        
+         <section id="Contacto">
+           <div class="container">
+             <h1>Contacto</h1>
+             <div class="about-left">
+              <br/><br/><br/> 
+              </div>
+           </div>
+         </section>
+         
+         <script type="text/JavaScript"></script>
+         <div class="mapa"></div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12245.755686228991!2d-0.0970597!3d39.8868042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6005b59f96a68d%3A0xdc2b1fee3568160c!2sEsport%20P%C3%A0del%20Burriana!5e0!3m2!1ses!2ses!4v1723736677591!5m2!1ses!2ses" width="850" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </script>
+     
+     <script type="text/JavaScript">
+         function cargarmapa() {
+             var punto = new google.maps.LatLng(
+              39.8868042,
+              -0.0970597,15
+             );
+             var opciones = {
+                 zoom: 16,
+                 center: punto,
+                 mapTypeId: google.maps.MapTypeId.ROADMAP
+             };
+             mapa = new google.maps.Map(document.getElementById("mapa"), opciones);
+             var opciones_fotos = {
+                 position: punto,
+                 pov: {
+                     //ángulo de rotación respecto al norte de la posición
+                     heading: 34, 
+                     //variación ángulo hacia arriba o hacia debajo de la cámara
+                     pitch: 0, 
+                     //zoom de cercanía de la foto, con 0 alejamiento total
+                     zoom: 1    
+             }
+         };
+         var fotos = new google.maps.StreetViewPanorama(
+             document.getElementById("fotos") ,
+             opciones_fotos);
+             mapa.setStreetView(fotos);
+         }
+     </script>
+     <body onload="cargarmapa()">
+      <div id="mapa" 
+          style="position:relative;float:left;width:450px;height:455px"></div>
+      
+  </body>
+ 
+         <footer id="mainfooter">
+          <a href="http://www.youtube.com/@AviarioSyly" class="youtube-follow-button"
+          data-show-count="-blank">Follow @AviarioSyly</a>
+          <a href="https://www.facebook.com/?form=MT00M3">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://wa.me/34644224805">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+          <a href="https://www.tiktok.com/@julians_2">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+         </footer>
+      
+</body>
+</html>

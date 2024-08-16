@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function(){			
+  $("#llamar_AJAX").on("click", function(e){
+    e.preventDefault();
+    $("#contenido_php").load("contenido_php.php");
+  });
+});
+</script>
+  <title>TRABAJO FINAL| INDEX.HTML</title>
+</head>
+<body>
+    <header id="mainheader">
+        <nav id="mainnavbar">
+           <div class="container">
+            <h1 class="logo"><a href="index.html"> Trabajo Final <span class="text-orange">-Javascript</span></a></h1>
+               <ul>
+                 <li><a class="current" href="https://www.google.es/search?q=noticias"
+                 target="_blank">index</a></li> 
+                 <li><a href="galeria.html">Galeria</a></li>
+                 <li><a href="Presupuesto.html">Presupuesto</a></li>
+                 <li><a href="Contacto.html">Contacto</a></li> 
+               </ul>
+             </div> 
+        </nav>
+        <div id="showcase">
+          <div class="container2">
+              <p class="large"> "EJERCICIO DEL TRABAJO FINAL-JAVASCRIPT"</p>
+              <div class="showcase-row">
+                <a class="btn btn-light" href="https://www.google.es/search?q=noticias">Noticias</a>
+                <a class="btn btn-outline" href="//wa.me/34644224805">Contactar</a>
+              </div>
+          </div>
+         </div>      
+            </header>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <footer id="mainfooter">
+          <a href="http://www.youtube.com/@AviarioSyly" class="youtube-follow-button"
+          data-show-count="-blank">Follow @AviarioSyly</a>
+          <a href="https://www.facebook.com/?form=MT00M3">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://wa.me/34644224805">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+          <a href="https://www.tiktok.com/@julians_2">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+         </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?php
+
+$nombre = "NOTICIAS";
+$apodo = "Google";
+$sitioWeb = "https://www.google.es/search?q=noticias";
+?>
+<p><strong>Nombre</strong>: <?php echo $nombre ?></p>
+<p><strong>Apodo</strong>: <?php echo $apodo ?></p>
+<p><strong>Sitio web</strong>: <a href="<?php echo $sitioWeb ?>">Visitar</a> </p>
